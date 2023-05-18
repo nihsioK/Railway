@@ -1,0 +1,31 @@
+{% extends 'main/main.html' %}
+{% block content%}
+<center>
+    <h1>Принять машиниста</h1>
+    <input type="checkbox">
+    {{ mashids }}
+    {% if mashids.station.id == request.user.cities.id %}
+        <h1>{{ mashids.station }}</h1>
+    <table>
+    <tr>
+      <th scope="row">{{ mash.id }}</th>
+      <td><a href="{% url 'accept_mashinist' mash.id %}" >{{ mash.name }}</a></td>
+      <td>{{ mash.name }}</td>
+    </tr>
+    </table>
+    {% endif %}
+
+
+<!--
+    <% if submitted %>
+        Мы получили вашу форму
+    <% else %%>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+    <% endif %>-->
+</center>
+{% endblock %}

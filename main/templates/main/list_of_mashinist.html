@@ -1,0 +1,37 @@
+{% extends 'main/main.html' %}
+{% block content%}
+<center>
+    <h1>Список машинистов</h1>
+    {% csrf_token %}
+    <table class="table">
+      <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Имя машиниста</th>
+      <th scope="col">Название станции</th>
+      <th scope="col">Прибытие на станцию</th>
+      <th scope="col">Отбытие из станции</th>
+    </tr>
+  </thead>
+    <tbody>
+    {% for mash in listOfMashinist %}
+     <tr>
+      <th scope="row">{{ mash.id }}</th>
+      <td><a href="{% url 'accept_mashinist' mash.id %}" >{{ mash.name }}</a></td>
+      <td>{{ mash.station }}</td>
+      <td>{% if mash.job_start %}
+                Done
+        {% else %}
+                 Not done
+        {% endif %}
+      </td>
+      <td>{{ mash.stations }}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+
+    </table>
+
+</center>
+{% endblock %}

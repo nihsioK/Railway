@@ -1,0 +1,675 @@
+{% extends 'main/main.html' %}
+{% block content%}
+<head>
+    <style>
+    .desktop-3
+{
+width:1440px;
+height:1024px;
+padding:0px;
+background-color:#ffffff;
+position:absolute;
+}
+.rectangle1
+{
+width:2082px;
+height:121px;
+background-color:#1a195e;
+border:2px solid #1a195e;
+}
+.главныйэкран
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Lato;
+letter-spacing:-2%;
+line-height:auto;
+color:#ffffff;
+left:93px;
+top:33px;
+position:absolute;
+}
+.enteryourtrackingnumber
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Lato;
+left:630px;
+top:36px;
+width:495px;
+height:19px;
+position:absolute;
+letter-spacing:-2%;
+line-height:123.00000190734863%;
+color:#ffffff;
+}
+.line4
+{
+transform:rotate(-1deg);
+width:288.237060546875px;
+border:3px solid #f55421;
+top:87px;
+left:291px;
+position:absolute;
+}
+.enteryourtrackingnumber2
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Lato;
+left:325px;
+top:37px;
+width:378px;
+height:19px;
+position:absolute;
+letter-spacing:-2%;
+line-height:123.00000190734863%;
+color:#f55421;
+}
+.enteryourtrackingnumber3
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Lato;
+left:1062px;
+top:37px;
+width:378px;
+height:19px;
+position:absolute;
+letter-spacing:-2%;
+line-height:123.00000190734863%;
+color:#ffffff;
+}
+.enteryourtrackingnumber4
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Lato;
+left:1251px;
+top:37px;
+width:154px;
+height:19px;
+position:absolute;
+letter-spacing:-2%;
+line-height:123.00000190734863%;
+color:#ffffff;
+}
+.enteryourtrackingnumber5
+{
+text-align:left;
+vertical-align:text-top;
+font-size:40px;
+font-family:Almarai;
+left:58px;
+top:189px;
+width:482px;
+height:51px;
+position:absolute;
+letter-spacing:-2%;
+line-height:123.00000190734863%;
+color:#1a195e;
+}
+.rectangle6
+{
+width:636px;
+height:200px;
+background-color:#ffffff;
+top:274px;
+left:67px;
+position:absolute;
+box-shadow:0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.placemarker
+{
+width:48px;
+height:43px;
+left:73px;
+top:431px;
+position:absolute;
+}
+.placemarker2
+{
+width:48px;
+height:42px;
+left:73px;
+top:274px;
+position:absolute;
+}
+.line7
+{
+width:114px;
+left:98px;
+top:316px;
+position:absolute;
+}
+.павлодар,казахстан
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+left:132px;
+top:282px;
+width:317px;
+height:36px;
+position:absolute;
+line-height:auto;
+color:#000000;
+}
+.тчэ-43
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Arya;
+left:168px;
+top:331px;
+width:317px;
+height:36px;
+position:absolute;
+line-height:auto;
+color:#000000;
+}
+..09,в9:00
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Arya;
+left:168px;
+top:381px;
+width:317px;
+height:35px;
+position:absolute;
+line-height:auto;
+color:#000000;
+}
+.пнхз,казахстан
+{
+text-align:left;
+vertical-align:text-top;
+font-size:25px;
+font-family:Adamina;
+left:132px;
+top:435px;
+width:317px;
+height:35px;
+position:absolute;
+line-height:auto;
+color:#000000;
+}
+.train
+{
+width:38px;
+height:29px;
+left:126px;
+top:331px;
+position:absolute;
+}
+.frame25
+{
+width:117px;
+height:49px;
+border-radius:4px;
+padding-left:32px;
+padding-right:32px;
+padding-bottom:16px;
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+gap:10px;
+position:absolute;
+background-color:#19185d;
+top:410px;
+left:549px;
+}
+.принять
+{
+text-align:left;
+vertical-align:text-top;
+font-size:16px;
+font-family:Almarai;
+align-self:flex-start;
+left:10px;
+top:14px;
+position:absolute;
+letter-spacing:-2%;
+line-height:auto;
+color:#ffffff;
+}
+.arrow
+{
+width:16px;
+height:18px;
+left:0px;
+top:0px;
+position:absolute;
+}
+.frame24
+{
+width:653px;
+height:327px;
+padding:0px;
+left:749px;
+top:648px;
+position:relative;
+background-color:#ffffff;
+}
+.rectangle5
+{
+width:613px;
+height:275px;
+left:0px;
+top:0px;
+position:absolute;
+}
+.rectangle7
+{
+width:592px;
+height:324px;
+background-color:#ffffff;
+top:-342px;
+left:30px;
+position:absolute;
+}
+.googlecalendar
+{
+width:38px;
+height:29px;
+left:126px;
+top:384px;
+position:absolute;
+}
+.rectangle62
+{
+width:306px;
+height:342px;
+left:218px;
+top:585px;
+position:absolute;
+}
+.frame22
+{
+width:335px;
+height:48px;
+border-radius:4px;
+padding-left:32px;
+padding-right:32px;
+padding-top:16px;
+padding-bottom:16px;
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+gap:10px;
+position:absolute;
+background-color:#1a195e;
+top:537px;
+left:203px;
+}
+.получитьqr-code
+{
+text-align:left;
+vertical-align:text-top;
+font-size:14px;
+font-family:Almarai;
+align-self:flex-start;
+left:103.5px;
+top:16px;
+position:absolute;
+letter-spacing:-2%;
+line-height:auto;
+color:#ffffff;
+}
+.arrow2
+{
+width:16px;
+height:18px;
+left:102px;
+top:0px;
+position:absolute;
+}
+.вашномермаршрутноголиста
+{
+text-align:left;
+vertical-align:text-top;
+font-size:14px;
+font-family:Almarai;
+left:787px;
+top:191px;
+width:387px;
+height:18px;
+position:absolute;
+letter-spacing:-2%;
+line-height:auto;
+color:#1a195e;
+}
+.ожидаемаядатаприбытия:30.09.2022
+{
+text-align:left;
+vertical-align:text-top;
+font-size:14px;
+font-family:Adamina;
+left:787px;
+top:259px;
+width:462px;
+height:21px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:#1a195e;
+}
+.8
+{
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Almarai;
+left:787px;
+top:217px;
+width:167px;
+height:30px;
+position:absolute;
+line-height:auto;
+color:#f55421;
+}
+.group1
+{
+width:499.7626647949219px;
+height:43.931034088134766px;
+top:326.17px;
+left:782.08px;
+position:absolute;
+}
+..09.2022•09:20
+{
+text-align:left;
+vertical-align:text-top;
+font-size:12px;
+font-family:Adamina;
+left:823.87px;
+top:326.17px;
+width:184.58132934570312px;
+height:18.02298927307129px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:rgba(26, 25, 94, 0.5);
+}
+.выездизстанцииотправления
+{
+text-align:left;
+vertical-align:text-top;
+font-size:16px;
+font-family:Almarai;
+left:823.87px;
+top:349.82px;
+width:457.9706726074219px;
+height:20.275861740112305px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:rgba(26, 25, 94, 0.5);
+}
+.ellipse2
+{
+top:341.94px;
+left:782.08px;
+position:absolute;
+}
+.group2
+{
+width:588.5706787109375px;
+height:43.931034088134766px;
+top:401.64px;
+left:782.08px;
+position:absolute;
+}
+..09.2022•19:54
+{
+text-align:left;
+vertical-align:text-top;
+font-size:12px;
+font-family:Adamina;
+left:823.87px;
+top:401.64px;
+width:177.61599731445312px;
+height:18.02298927307129px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:rgba(26, 25, 94, 0.5);
+}
+.прибытиевпромежуточнуюстанцию
+{
+text-align:left;
+vertical-align:text-top;
+font-size:16px;
+font-family:Almarai;
+left:823.87px;
+top:425.29px;
+width:546.7786865234375px;
+height:20.275861740112305px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:rgba(26, 25, 94, 0.5);
+}
+.ellipse22
+{
+top:417.41px;
+left:782.08px;
+position:absolute;
+}
+.group3
+{
+width:522.4000244140625px;
+height:64.20689392089844px;
+top:477.11px;
+left:782.08px;
+position:absolute;
+}
+..09.2022•07:54
+{
+text-align:left;
+vertical-align:text-top;
+font-size:12px;
+font-family:Adamina;
+left:823.87px;
+top:477.11px;
+width:184.58132934570312px;
+height:18.02298927307129px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:rgba(26, 25, 94, 0.5);
+}
+.отправлениеизпромежуточнойстанции
+{
+text-align:left;
+vertical-align:text-top;
+font-size:16px;
+font-family:Almarai;
+left:823.87px;
+top:500.77px;
+width:480.6080017089844px;
+height:40.55172348022461px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:rgba(26, 25, 94, 0.5);
+}
+.ellipse23
+{
+top:492.88px;
+left:782.08px;
+position:absolute;
+}
+.group4
+{
+width:499.7626647949219px;
+height:43.931034088134766px;
+top:560.47px;
+left:782.08px;
+position:absolute;
+}
+..09.2022•13:54
+{
+text-align:left;
+vertical-align:text-top;
+font-size:12px;
+font-family:Adamina;
+left:823.87px;
+top:560.47px;
+width:181.09866333007812px;
+height:18.02298927307129px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:#f55421;
+}
+.приезднастанциюназначения
+{
+text-align:left;
+vertical-align:text-top;
+font-size:16px;
+font-family:Almarai;
+left:823.87px;
+top:584.12px;
+width:457.9706726074219px;
+height:20.275861740112305px;
+position:absolute;
+letter-spacing:-1%;
+line-height:auto;
+color:#f55421;
+}
+.ellipse24
+{
+top:576.24px;
+left:782.08px;
+position:absolute;
+}
+</style>
+
+</head>
+
+<center>
+    {% csrf_token %}
+    {% if user.profile.isDepo == True %}
+    <h1>С возвращением Менеджер Депо города
+        {{ user.cities.name_city }}
+    </h1>
+    <h1>Список машинистов</h1>
+    <h1>Принять машиниста</h1>
+    {% endif %}
+    {% if user.profile.isMash == True %}
+    <h1>С возвращением Машинист</h1>
+    <h5>Текущий маршрут</h5>
+    {% endif %}
+    <!--<form action="" method=POST>
+
+  <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input required placeholder="Введите почту" aria-label="Username" aria-describedby="basic-addon1" type="text" class="form-control" name="username" aria-describedby="emailHelp">
+  </div>
+  <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input required placeholder="Введите пароль" aria-label="Password" aria-describedby="basic-addon1" type="password" class="form-control" name="password">
+  </div>
+  <div class="mb-3 form-check">
+  </div>
+  <button type="submit" class="btn btn-secondary">Войти</button>
+    </form>-->
+
+
+ <div class="row">
+    <div class="col">
+        <div class="card card-2">
+            <div class="card-body">
+                <div class="media">
+                    <div class="sq align-self-center ">
+                    <div class='navbar'>
+                        <div class='navbar'>
+                            <img class='' src='data:image/png;base64,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'/>
+                            </img>
+                            <h8 >Павлодар, Казахстан</h8>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="media-body my-auto text-right">
+                        <div class="row  my-auto flex-column flex-md-row">
+                            <div class="media-body my-auto text-right">
+                                <img id='' class='' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAdCAYAAADGgB7AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL0SURBVHgB7VdNaBNREJ7Zn6RNxUqxP7tWRMR68KK1Il5UxJ+LJ6HYav9OvQgK9eRJpIJ4EREE9aDRYhUED1UoVNB60YNHRepBaEW7UaOstDbpNvvG2RjTtI3Je9V6CP0O2Xnvzbz53t/MBGAZJQKERaNZr6oKVRiGKE+lNDMcJj3onZ5G3zQ1z/e/J+LxgUnuIlgElIhVVzevCOmR3QJpPxtuZvN1gGI1EFawf5PbAQmP5YDQV9ZxiPCNjtrjFMSHHOfRlKwvaWK23dUCJC6w07VsprzTRPAONewZH781IKMv5cCyOnch0CCLEfg7kCBtbywWHS6maIAENBDHCDAgleCVvwzmzx1HRIs/m9KeCUb5d3TuuKb9GqdaHf1WloeL+ZQiJgjDweERUJsT63swf9yyuiMIyR+BnEhqW1036i7QqW0/ykd5h0gLgQQ0UAARfcvX7zjXs5c6H6m0LdI4KECJ2P9EaRAzDCPvq6yvby6fbVHel87XQAcVXyrKwqdeu65zR/rt5fYLDrSZAG/bHf0gOt7OMdTSce/APLN/R4ydN3Lka1zYneOQsGVBdCT1rLR8+VVROsSCZMwJ7ySnqCEoUtIg0kO+bqdYHIOlJqYbdML51HdZCHGYeX0uoBqbmAx1fXRuX+RU1gNLQYwf+0y24ePGjLSeRyoLmEUqTL8mEDg/1s5ORimQgFS44FriNWaWwGXFedvqbGcHG/ggywqYrcSQeLbGah/jHWvKzgX4CiQgtWOEiX7+jGaaHOVpG3tYJWFaw0S2Q7buow8zM/pNCTs5YrHY/S9c+hzi2Qf5tvugDArquKe8y/vi8RsTMhaKJXK3aVvJ5yw08Y6dFeBFC2nraLbxjvWy7gsv5R7kPydSpAIopSTbntpDQtvCjyE2ldQuue49t5C+ZbVeRTCP8/J3hsOVwZE+AUkoFor6GSZlcP1/5U8FYS4c526cSV1L2wo8DQpQ2jHPoyOm6ZnJZFlRUr/R0PD+3MhIXRRKBT8BsBwQuzju4ecAAAAASUVORK5CYII='/>
+                                </img>
+                                <h7>ТЧЭ-43</h7>
+
+                            </div>
+                            <div class="col my-auto"> <img id='' class='' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAByCAYAAAB5lADlAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVHgBndEvD8MgEAVwKCeQGNJrZpCVk5X7Gvsj+LiTk5OTk5MISJfQsoTc2CinLnk/8/I44uXAvh5PEcwzuDwyxsoYOeenglHKqhhJ6ffxEQFe243WFpdI+DE+nMNzu0G0JkaM+fTA458JAe65GYbjuFYWWG2kg1tudvq0VA6iU/VGwjU3fX+e1spcFkyasmPF+2Gq5qambW5q2uampmZuatrmpqZxbmJq5iaG3mfuN0pKZTEvZNj+AAAAAElFTkSuQmCC'/></img>
+
+                            </div>
+                            <div class="media-body my-auto text-right">
+                                <img id='' class='' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAdCAYAAADGgB7AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPmSURBVHgB7VddbBRVFD7nznS6awHbpYsz25YGagKGgMZqo9LElQcfNSZiiNIVMCEa44uPGhNjog/Ki+mjkpQuJoZ9kkR9MIEa4m9o1EgbhTap7XZn1pYNhGa3sztzD2e2QJayM1PY7Rvfy70z57vf/fbce8/cBbiPuwOuhdTZeWSjqhY3Q4NAFFSpLBUWF09fC+WGEXp7h7Y5ZfyBgLZ70tAYWAb+Fqp4OZsduRREVCEEFRveZPt9RDgDDYJ/Vjtr7XFd9y1+fBcaMUaAD2G1lYct6+QYNABdP5gUKM4iiY4wbqixm0DCx1gYGgHvsUfXzA0KduupAYnwDXd1aC4sSfCiZY3+7kcQfoH+/qMtEuDEOpjyoCPQ8WQyqd61sfxssRcBDVg/9ExObtvqF/Q1prapi7yxirBOQES7peRe9Yv7GpuZGbkiAedgnUA8xfy10ct+cREy/GJAkEXpHBF9SwT/8ETyTgraXFHz9QZzTbsAAQg0JgT+XDdAMOW4sC9nzu1LdEVfMq3IHp7ovVthggmufx9z7RskUg7UV6f62msxhkg/1ZVEGubYtGH0HDdzy9wWn9q7t3QMVpZ+FjAyYNvOp6aZPg/g1NWmMv0B92osm529yJWuvPo9n9ZPFCGmuU3xYw+i0p3JnJJE0nPRjmCfjLQq57dsOby9ni4vuysV/BcCEPpRTiRS86yUAJTvSIlLtTGB+BE3UU7tGarIYVKwz8vnrbiAZ0HifxJopvoMopNP+mdsbM40R7fes7GOjv0PRlqjl3n/LLd3lGKTk5nbspfQU1+zkd1srI+zd2zePPEBVBMCEIu9timiKeO8+bOmlX5uZQRhQj90hd+1OW6pfWEhs+Q3d+BSapqyk00p/Ct/W23KQ84aPZCz0rvYyhc82fuG8erzEAjkMwG/epqqGtkZxAw0pmLr49WOpPHa94nE68OGnhrr7Txo3FCp1iNB2iYIA9FfKx1lMIgWfLtAerrqC8TEqsiffCrfdlrEeJcxlOVa9gTf16Yf2JA/DSHgYjfhZQNBPhnEC8gYeXnf5fU0zTlXG8nliiOS8BU29CORsAjE58t2qX9q6nv7JicWi9mI8hR/rMdqxyoK/FJVB3gEAuC7+ePxQ3qLKi94EjkzHYcbm7oJwC4jVWCxsitpdz6f/r8eyTdjjuNqfDnkpRYyHt/fBk3Cjh1HNnimuKsJoUX9eIHlwtCHzvItIMndRRZbgiaAJ9zIzWZuv3tmsPRCJpNxfXj+6I6/8bCrVL7k4z0AXiFtCqof9jO27R4tFL7K+rJCdeBD0RW7lHA1d83/D4KglBUnGiss1B6U+2gGrgO5vmtHwnG0vQAAAABJRU5ErkJggg=='/>
+                                </img>
+                                <h7>29.09, в 9:00 </h7>
+
+                            </div>
+                        </div>
+
+                        </div>
+                    <div class="sq align-self-center ">
+                    <div class='navbar'>
+                        <div class='navbar'>
+                            <img class='' src='data:image/png;base64,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'/>
+                        </img>
+                            <h8>ПНХЗ, Казахстан</g3>
+                        </div>
+                    </div>
+                         <a href ="{% url 'accept' %}" class="btn btn-primary" >Принять</a>
+                    </div>
+                    </div>
+                    </div>
+
+
+                    </div>
+                    </div>
+                </div>
+
+<div class ="row">
+    <h5 class=''>Ваш маршрутный лист </h5>
+    </div>
+
+        <div class="card card">
+            <div class="card-body">
+                    <div class="sq align-self-center ">
+                    <div class='navbar'>
+                        <div class='navbar'>
+                            <img class='' src='data:image/png;base64,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'/>
+                            </img>
+                            <h11 >Выезд из станции  отправления: 10:00</h11>
+                        </div>
+                    </div>
+                        <div class='navbar'>
+                        <div class='navbar'>
+                            <img class='' src='data:image/png;base64,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'/>
+                            </img>
+                            <h11 >Прибытие в промежуточную станцию: 13:00</h11>
+                        </div>
+                    </div>
+                        <div class='navbar'>
+                        <div class='navbar'>
+                            <img class='' src='data:image/png;base64,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'/>
+                            </img>
+                            <h11>Отправление из промежуточной станции: 15:39</h11>
+                        </div>
+                    </div>
+                    </div>
+
+                    </div>
+                    </div>
+</center>
+{% endblock %}

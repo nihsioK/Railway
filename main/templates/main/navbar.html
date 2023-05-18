@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #19185d">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">SilkwayTransit</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+{% if user.profile.isMash == False %}
+              <li class="nav-item">
+           <a class="nav-link" href="{% url 'list' user.id %}">Список машинистов</a>
+              </li>
+           <li class="nav-item">
+           <a class="nav-link" href="{% url 'accept_mashinist' user.id %}">Принять машиниста</a>
+        </li>
+ {% endif %}
+      {% if user.profile.isMash == True %}
+           <li class="nav-item">
+           <a class="nav-link" href="{% url 'current_route' %}">Текущая работа</a>
+        </li>
+      {% endif %}
+      {% if user == True %}
+          <li class="nav-item">
+           <a class="nav-link" href="{% url 'login' %}">Войти в аккаунт</a>
+        </li>
+      {% endif %}
+
+
+      </ul>
+      <form class="d-flex" role="search" method=POST >
+          {% csrf_token %}
+          <span  style="color: white">Hello, {{ request.user }} &nbsp;&nbsp;&nbsp; </span>
+          <span><a style="color: white" href="{% url 'logout' %}">logout</a> </span>
+        <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="Searched">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>-->
+      </form>
+
+    </div>
+  </div>
+
+
+</nav>
